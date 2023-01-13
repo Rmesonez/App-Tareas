@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './componentes/Logo';
+
+// import freeCodeCampLogo from './imagenes/freecodecamp-logo.png'; AL CREARSE EL COMPONENTE NO ES NECESARIO IMPORTAR LA IMAGEN
+
+// import Tarea from './componentes/Tarea';
+// import TareaFormulario from './componentes/TareaFormulario'; AL CREARSE LISTA DE TAREAS QUE INCLUYE A TAREA Y TAREA FORMULARIO NO ES NECESARIO IMPORTARLOS
+
+import ListaDeTareas from './componentes/ListaDeTareas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='aplicacion-tareas'>
+      {/* <div className='freecodecamp-logo-contenedor'>
+         <img 
+          src={freeCodeCampLogo} 
+          className='freecodecamp-logo' 
+          alt='logo'/>
+      </div> */}
+      <Logo />
+      <div className='tareas-lista-principal'>
+        <h1>Mis Tareas</h1>
+        {/* <TareaFormulario />
+        <Tarea /> */}
+        <ListaDeTareas />
+      </div>
     </div>
   );
 }
