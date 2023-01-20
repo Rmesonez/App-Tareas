@@ -20,6 +20,7 @@ function TareaFormulario(props) {
     }
 
     props.onSubmit(tareaNueva);
+    e.target.reset();
   }
 
   //una vez agregada la tarea dejar en blanco el input
